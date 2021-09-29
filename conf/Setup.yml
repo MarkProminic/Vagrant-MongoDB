@@ -52,19 +52,21 @@
       name: "Ensuring Aptitude is installed."
   roles: 
     - 
-      role: java
-    - 
-      role: desktop
-    - 
-      role: sikulix
-    - 
-      role: jenkins
-    - 
-      role: xrdp
-    - 
-      role: view
-    - 
-      role: letsencrypt
-      when: item
-      with_items: run_letsencrypt
+      role: mongodb
+#    - 
+#      role: java
+#    - 
+#      role: desktop
+#    - 
+#      role: sikulix
+#    - 
+#      role: jenkins
+#    - 
+#      role: xrdp
+#    - 
+#      role: view
+#    - 
+#      role: letsencrypt
+#      when: item
+#      with_items: run_letsencrypt
 
