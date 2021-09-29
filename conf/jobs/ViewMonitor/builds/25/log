@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+Xvfb starting$ /usr/bin/Xvfb -displayfd 2 -screen 0 1440x900x24 -fbdir /var/lib/jenkins/xvfb-25-..fbdir9817356678240735014
+0
+[workspace] $ /bin/sh -xe /tmp/jenkins1045814668458863943.sh
++ export DISPLAY=:0
+/tmp/jenkins1045814668458863943.sh: 10: Syntax error: end of file unexpected (expecting "fi")
+Build step 'Execute shell' marked build as failure
+Xvfb stopping
+Finished: FAILURE

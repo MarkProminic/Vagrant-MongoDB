@@ -1,0 +1,21 @@
+--- 
+- 
+  apt_repository: 
+    repo: "ppa:openjdk-r/ppa"
+    state: present
+    validate_certs: false
+  name: "Adding additional Repos"
+- 
+  apt: 
+    name: "{{ packages }}"
+  name: "Java 11 for Sikulix and Jenkins -- Takes about 10 Minutes"
+  vars: 
+    packages: 
+      - "openjdk-11-jre-headless"
+      - "openjdk-11-jre"
+-  
+  name: correct java version selected
+  alternatives:
+    name: java
+    path: /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+

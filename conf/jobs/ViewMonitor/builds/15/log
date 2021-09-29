@@ -1,0 +1,228 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+Xvfb starting$ /usr/bin/Xvfb -displayfd 2 -screen 0 1920x1080x24 -fbdir /var/lib/jenkins/xvfb-15-..fbdir3942641382943273980
+0
+[workspace] $ /bin/sh -xe /tmp/jenkins2476463503686575377.sh
++ export DISPLAY=:0
++ [ -z :0 ]
++ xrandr -s 1920x1080x24
++ echo $DISPLAY is :0
+$DISPLAY is :0
++ echo Starting Sikulix in Screen Session
+Starting Sikulix in Screen Session
++ /usr/lib/jvm/java-11-openjdk-amd64/bin/java -jar /jars/sikulixapi.jar -r /vagrant/ViewMonitor.sikuli --jbuild 15
+[user (6/10/21, 5:00:04 AM)] Jenkins Build: 15
+[debug] App: command wmctrl -m ran, but failed: `org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)'. Hoping for the best
+[error] findWindow:
+[error] error in command [wmctrl, -lpGx]
+[errout] Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+
+[error] findWindow:
+[error] error in command [wmctrl, -lpGx]
+[errout] Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+
+[error] openApp:
+offset 0, count -1, length 64
+[debug] Image: loaded: 1623318995432.png (file:/vagrant/ViewMonitor.sikuli/1623318995432.png)
+[debug] Image: cached: 1623318995432.png (12 KB) (# 1 KB 12 -- 0 % of 64 MB)
+[debug] RunTime:loadlib: trying opencv_java430
+[debug] RunTime:loadLib: libopencv_java430.so (success)
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: makeMat: 3BYTE_BGR (51x84)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 388 msec 
+[debug] Finder2: doFindImage: end 388 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 350 msec 
+[debug] Finder2: doFindImage: end 351 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 353 msec 
+[debug] Finder2: doFindImage: end 353 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 336 msec 
+[debug] Finder2: doFindImage: end 336 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 340 msec 
+[debug] Finder2: doFindImage: end 340 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 345 msec 
+[debug] Finder2: doFindImage: end 347 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 346 msec 
+[debug] Finder2: doFindImage: end 347 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 335 msec 
+[debug] Finder2: doFindImage: end 336 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 338 msec 
+[debug] Finder2: doFindImage: end 339 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 329 msec 
+[debug] Finder2: doFindImage: end 330 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 345 msec 
+[debug] Finder2: doFindImage: end 346 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 339 msec 
+[debug] Finder2: doFindImage: end 339 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 343 msec 
+[debug] Finder2: doFindImage: end 343 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 337 msec 
+[debug] Finder2: doFindImage: end 338 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 357 msec 
+[debug] Finder2: doFindImage: end 357 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 339 msec 
+[debug] Finder2: doFindImage: end 339 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 349 msec 
+[debug] Finder2: doFindImage: end 350 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 334 msec 
+[debug] Finder2: doFindImage: end 334 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 343 msec 
+[debug] Finder2: doFindImage: end 344 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 341 msec 
+[debug] Finder2: doFindImage: end 342 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 358 msec 
+[debug] Finder2: doFindImage: end 359 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 332 msec 
+[debug] Finder2: doFindImage: end 332 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 350 msec 
+[debug] Finder2: doFindImage: end 351 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 338 msec 
+[debug] Finder2: doFindImage: end 340 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 136.2438 mean: 432.733660)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 348 msec 
+[debug] Finder2: doFindImage: end 349 msec
+[debug] Image: loaded: 1623319019521.png (file:/vagrant/ViewMonitor.sikuli/1623319019521.png)
+[debug] Image: cached: 1623319019521.png (14 KB) (# 2 KB 26 -- 0 % of 64 MB)
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: makeMat: 3BYTE_BGR (67x72)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 408 msec 
+[debug] Finder2: doFindImage: end 408 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 416 msec 
+[debug] Finder2: doFindImage: end 416 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 523 msec 
+[debug] Finder2: doFindImage: end 524 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 410 msec 
+[debug] Finder2: doFindImage: end 411 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 409 msec 
+[debug] Finder2: doFindImage: end 410 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 114.2035 mean: 461.523010)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 426 msec 
+[debug] Finder2: doFindImage: end 427 msec
+[debug] Image: loaded: 1623319031517.png (file:/vagrant/ViewMonitor.sikuli/1623319031517.png)
+[debug] Image: cached: 1623319031517.png (15 KB) (# 3 KB 42 -- 0 % of 64 MB)
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: makeMat: 3BYTE_BGR (68x80)
+[debug] Finder2: doFindImage: start (stdDev: 218.4395 mean: 443.811397)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 693 msec 
+[debug] Finder2: doFindImage: end 697 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 218.4395 mean: 443.811397)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 729 msec 
+[debug] Finder2: doFindImage: end 734 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 218.4395 mean: 443.811397)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 711 msec 
+[debug] Finder2: doFindImage: end 712 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 218.4395 mean: 443.811397)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 643 msec 
+[debug] Finder2: doFindImage: end 646 msec
+[debug] Image: loaded: 1623319046270.png (file:/vagrant/ViewMonitor.sikuli/1623319046270.png)
+[debug] Image: cached: 1623319046270.png (13 KB) (# 4 KB 55 -- 0 % of 64 MB)
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: makeMat: 3BYTE_BGR (65x69)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 760 msec 
+[debug] Finder2: doFindImage: end 760 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 411 msec 
+[debug] Finder2: doFindImage: end 412 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 362 msec 
+[debug] Finder2: doFindImage: end 363 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 373 msec 
+[debug] Finder2: doFindImage: end 374 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 365 msec 
+[debug] Finder2: doFindImage: end 365 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 223.2507 mean: 378.789744)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 363 msec 
+[debug] Finder2: doFindImage: end 363 msec
+[error] findWindow:
+[error] error in command [wmctrl, -lpGx]
+[errout] Cannot get client list properties. 
+(_NET_CLIENT_LIST or _WIN_CLIENT_LIST)
+
+[debug] Image: loaded: 1623274459989.png (file:/vagrant/ViewMonitor.sikuli/1623274459989.png)
+[debug] Image: cached: 1623274459989.png (34 KB) (# 5 KB 90 -- 0 % of 64 MB)
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: makeMat: 3BYTE_BGR (282x42)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 401 msec 
+[debug] Finder2: doFindImage: end 402 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 395 msec 
+[debug] Finder2: doFindImage: end 396 msec
+[debug] Finder2: makeMat: INT_RGB (1920x1080)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %0.0000 (?70) 382 msec 
+[debug] Finder2: doFindImage: end 383 msec
+Xvfb stopping
+Finished: SUCCESS

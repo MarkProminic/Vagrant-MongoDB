@@ -1,0 +1,113 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+Xvfb starting$ /usr/bin/Xvfb -displayfd 2 -screen 0 1440x900x24 -fbdir /var/lib/jenkins/xvfb-32-..fbdir3119266365236411844
+0
+[workspace] $ /bin/sh -xe /tmp/jenkins9682057075854569211.sh
++ export DISPLAY=:11
++ [ -z :11 ]
++ xrandr -s 1440x900x24
++ echo $DISPLAY is :11
+$DISPLAY is :11
++ echo Starting Sikulix in Screen Session
+Starting Sikulix in Screen Session
++ /usr/lib/jvm/java-11-openjdk-amd64/bin/java -jar /jars/sikulixapi.jar -r /vagrant/ViewMonitor.sikuli --jbuild 32
+[error] Hot key conflicts
+[error] HotkeyManager: addHotkey: failed
+[user (6/10/21, 6:17:19 AM)] Jenkins Build: 32
+[user (6/10/21, 6:17:19 AM)] App found!
+[debug] Image: loaded: 1623274459989.png (file:/vagrant/ViewMonitor.sikuli/1623274459989.png)
+[debug] Image: cached: 1623274459989.png (34 KB) (# 1 KB 34 -- 0 % of 64 MB)
+[debug] RunTime:loadlib: trying opencv_java430
+[debug] RunTime:loadLib: libopencv_java430.so (success)
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: makeMat: 3BYTE_BGR (282x42)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %36.5047 (?70) 257 msec 
+[debug] Finder2: doFindImage: end 257 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %42.9917 (?70) 186 msec 
+[debug] Finder2: doFindImage: end 186 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %42.9917 (?70) 201 msec 
+[debug] Finder2: doFindImage: end 201 msec
+[error] openApp:
+offset 0, count -1, length 64
+[debug] FileManager: saveImage: /tmp/Sikulix_1336152914/sikuliximage-1623323854308.png
+[debug] Image: loaded: 1623320708763.png (file:/vagrant/ViewMonitor.sikuli/1623320708763.png)
+[debug] Image: cached: 1623320708763.png (1910 KB) (# 2 KB 1944 -- 2 % of 64 MB)
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: makeMat: 3BYTE_BGR (898x726)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 288 msec 
+[debug] Finder2: doFindImage: end 289 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 285 msec 
+[debug] Finder2: doFindImage: end 286 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 277 msec 
+[debug] Finder2: doFindImage: end 278 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 306 msec 
+[debug] Finder2: doFindImage: end 306 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 294 msec 
+[debug] Finder2: doFindImage: end 295 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 302 msec 
+[debug] Finder2: doFindImage: end 308 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 330 msec 
+[debug] Finder2: doFindImage: end 330 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 291 msec 
+[debug] Finder2: doFindImage: end 291 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 300 msec 
+[debug] Finder2: doFindImage: end 301 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3581 (?70) 335 msec 
+[debug] Finder2: doFindImage: end 336 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3490 (?70) 288 msec 
+[debug] Finder2: doFindImage: end 288 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3490 (?70) 278 msec 
+[debug] Finder2: doFindImage: end 279 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3490 (?70) 283 msec 
+[debug] Finder2: doFindImage: end 283 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 89.4925 mean: 408.941574)
+[debug] Finder2: doFindImage: in original: %8.3490 (?70) 295 msec 
+[debug] Finder2: doFindImage: end 295 msec
+[debug] Image: reused: 1623274459989.png (file:/vagrant/ViewMonitor.sikuli/1623274459989.png)
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: makeMat: 3BYTE_BGR (282x42)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %44.0689 (?70) 185 msec 
+[debug] Finder2: doFindImage: end 186 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %44.0689 (?70) 181 msec 
+[debug] Finder2: doFindImage: end 182 msec
+[debug] Finder2: makeMat: INT_RGB (1440x900)
+[debug] Finder2: doFindImage: start (stdDev: 71.9923 mean: 741.321766)
+[debug] Finder2: doFindImage: in original: %44.0689 (?70) 207 msec 
+[debug] Finder2: doFindImage: end 222 msec
+Xvfb stopping
+Finished: SUCCESS

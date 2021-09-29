@@ -1,0 +1,26 @@
+---
+-
+  name: "Allowing access to 3389 for XRDP"
+  ufw:
+    rule: allow
+    port: 3389
+    proto: tcp
+-
+  name: "Allowing access to SSH for X11"
+  ufw:
+    rule: allow
+    port: 22
+    proto: tcp
+-
+  name: "Allowing access to 8080 for Jenkins"
+  ufw:
+    rule: allow
+    port: 8080
+    proto: tcp
+-
+  name: "Allowing access to 5800 for VNC"
+  ufw:
+    rule: allow
+    port: 5900
+    proto: tcp
+

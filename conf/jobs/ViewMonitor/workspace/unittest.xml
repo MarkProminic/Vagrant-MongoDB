@@ -1,0 +1,12 @@
+<testsuite errors="1" failures="0" name="unittest.suite.TestSuite" tests="1" time="0.014">
+  <testcase classname="__main__.UnitTestA" name="testRunScript" time="0.0040">
+    <error type="exceptions.NameError">global name 'doInstall' is not defined
+  File "/home/prominic/.Sikulix/Lib/unittest/case.py", line 332, in run
+    testMethod()
+  File "/vagrant/ViewMonitor.sikuli/ViewMonitor.py", line 67, in testRunScript
+    doInstall()
+    </error>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

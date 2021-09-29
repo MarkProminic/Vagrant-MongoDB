@@ -1,0 +1,11 @@
+---
+- 
+  name: "Send back VM completion request to Docova.com"
+  register: status
+  uri: 
+    body: "action=spinupupdate&token=27759b020fc7261abc6138675fc67626&instanceurl={{id}}&trackerid={{trackerid}}&iscomplete=yes"
+    headers: 
+      Content-Type: application/x-www-form-urlencoded
+    method: POST
+    status_code: 200
+    url: "https://docova.com/wp-admin/admin-ajax.php"

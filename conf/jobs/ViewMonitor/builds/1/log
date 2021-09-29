@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+[workspace] $ /bin/sh -xe /tmp/jenkins2343794887784691003.sh
++ export DISPLAY=:0
++ [ -z :0 ]
++ xrandr -s 1440x900x24
+Can't open display :0
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

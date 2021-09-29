@@ -1,0 +1,31 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.xvfb.XvfbEnvironment plugin="xvfb@1.1.3">
+      <frameBufferDir>/var/lib/jenkins/xvfb-12-..fbdir15217450414770632575</frameBufferDir>
+      <displayName>1</displayName>
+      <shutdownWithBuild>false</shutdownWithBuild>
+      <cookie>c55991bb-b264-427c-a0c7-4818825f34af</cookie>
+    </org.jenkinsci.plugins.xvfb.XvfbEnvironment>
+  </actions>
+  <queueId>12</queueId>
+  <timestamp>1623317605816</timestamp>
+  <startTime>1623317605820</startTime>
+  <result>FAILURE</result>
+  <duration>20982</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/lib/jenkins/jobs/ViewMonitor/workspace</workspace>
+  <hudsonVersion>2.289.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

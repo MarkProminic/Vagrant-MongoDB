@@ -1,0 +1,7 @@
+id_rsa
+core
+id_rsa.pub
+*.ppk
+.vagrant/
+.git
+

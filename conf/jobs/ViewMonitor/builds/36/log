@@ -1,0 +1,13 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+Xvfb starting$ /usr/bin/Xvfb -displayfd 2 -screen 0 1440x900x24 -fbdir /var/lib/jenkins/xvfb-36-..fbdir10015155727748377605
+0
+[workspace] $ /bin/sh -xe /tmp/jenkins1783077659210039387.sh
++ export DISPLAY=:11
++ [ -z :11 ]
++ xrandr -s 1440x900x24
+Can't open display :11
+Build step 'Execute shell' marked build as failure
+Xvfb stopping
+Finished: FAILURE

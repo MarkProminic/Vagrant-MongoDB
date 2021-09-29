@@ -1,0 +1,26 @@
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1567196698
+
+
+[org/gnome/desktop/screensaver]
+picture-options='none'
+status-message-enabled=false
+ubuntu-lock-on-suspend=false
+picture-uri='file:///usr/share/backgrounds/ProminicBackground.png'
+idle-activation-enabled=false
+show-full-name-in-top-bar=false
+user-switch-enabled=false
+lock-enabled=false
+
+[org/gnome/desktop/background]
+picture-options='zoom'
+color-shading-type='solid'
+draw-background=true
+secondary-color='#000000000000'
+picture-uri='file:///usr/share/backgrounds/ProminicBackground.png'
+primary-color='#000000000000'
+show-desktop-icons=false
+
+
+[org/gnome/shell]
+favorite-apps=['Sikulix.desktop', 'vmware-view.desktop', 'org.gnome.Terminal.desktop']

@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/jobs/ViewMonitor/workspace
+Xvfb starting$ /usr/bin/Xvfb -displayfd 2 -screen 0 1440x900x24 -fbdir /var/lib/jenkins/xvfb-7-..fbdir8152846871138131187
+0
+[workspace] $ /bin/sh -xe /tmp/jenkins893844939035257783.sh
++ export DISPLAY=:0
++ [ -z :0 ]
++ xrandr -s 1440x900x24
++ echo $DISPLAY is :0
+$DISPLAY is :0
++ echo Starting Sikulix in Screen Session
+Starting Sikulix in Screen Session
++ /usr/lib/jvm/java-11-openjdk-amd64/bin/java -jar /jars/sikulixapi.jar -r /vagrant/ViewMonitor.sikuli --jbuild 7
+[error] script [ ViewMonitor ] stopped with error in line 8
+[error] ImportError ( compiled unit contains version 37 code (38 required): /vagrant/ViewMonitor.sikuli/xmlrunner$py.class )
+[error] --- Traceback --- error source first
+line: module ( function ) statement 
+8: main (  <module> )     from xmlrunner import *
+[error] --- Traceback --- end --------------
+Build step 'Execute shell' marked build as failure
+Xvfb stopping
+Finished: FAILURE

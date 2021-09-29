@@ -1,0 +1,50 @@
+--- 
+- 
+  name: "Stop services to allow certbot to generate a cert."
+  service: 
+    name: "{{ item }}"
+    state: stopped
+  with_items: "{{ certbot_create_standalone_stop_services }}"
+- 
+  name: "Generate new Certificate request"
+  shell: "certbot certonly --standalone --noninteractive --agree-tos --email {{ certbot_admin_email }} -d {{ item }} --staging"
+  with_items: "{{ certbot_domain }}"
+  
+- 
+  name: "Convert SSL keys to PKCS12 format"
+  shell: "sudo openssl pkcs12 -export -out /etc/letsencrypt/live/{{ item }}/fullchain.p12 -passout 'pass:{{ certbot_ssl_passphrase }}' -inkey /etc/letsencrypt/live/{{ item }}/privkey.pem -in /etc/letsencrypt/live/{{ item }}/cert.pem -certfile /etc/letsencrypt/live/{{ item }}/fullchain.pem -name {{ item }}"
+  with_items: "{{ certbot_domain }}"
+
+- 
+  name: "Delete old SSL keys to jks format"
+  shell: "sudo keytool -delete -alias  {{ item }} -keystore /etc/letsencrypt/live/{{ item }}/jenkins.jks  -storepass {{ certbot_ssl_passphrase }}"
+  with_items: "{{ certbot_domain }}"
+  ignore_errors: yes
+
+- 
+  name: "Convert SSL keys to jks format"
+  shell: "sudo keytool -importkeystore -srckeystore /etc/letsencrypt/live/{{ item }}/fullchain.p12 -srcstorepass {{ certbot_ssl_passphrase }} -srcstoretype PKCS12 -srcalias {{ item }} -deststoretype JKS -destkeystore /etc/letsencrypt/live/{{ item }}/jenkins.jks -deststorepass {{ certbot_ssl_passphrase }} -destalias {{ item }}"
+  with_items: "{{ certbot_domain }}"
+  
+-
+  include_tasks: "{{ item }}"
+  name: "Include task list in play"
+  with_items: jenkins-le.yml
+  when: jenkins_ssl
+- 
+  name: "Start services after cert has been generated."
+  service: 
+    name: "{{ item }}"
+    state: started
+    daemon_reload: yes
+  with_items: "{{ certbot_create_standalone_stop_services }}"
+
+- name: Run the SSL Renewal every 70 Days, Get Cert
+  cron:
+    name: "Get Cert"
+    minute: "1"
+    hour: "0"
+    day: "*/{{ certbot_renewal_days }}"
+    user: root
+    job: "certbot certonly --standalone --noninteractive --agree-tos --email {{ certbot_admin_email }} -d {{ item }}"
+  with_items: "{{ certbot_create_standalone_stop_services }}"
