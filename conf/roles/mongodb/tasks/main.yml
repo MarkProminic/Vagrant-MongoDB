@@ -3,22 +3,22 @@
   apt_key: 
     state: present
     url: "https://www.mongodb.org/static/pgp/server-5.0.asc"
-  name: "Add MongoDB source Apt signing key, uses whichever key is at the URL"
+  name: "Adding MongoDB source Apt signing key"
 - 
   lineinfile: 
     create: true
     dest: /etc/apt/sources.list.d/mongodb-org-5.0.list
     line: "deb https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse"
     state: present
-  name: "Add MongoDB sources list"
+  name: "Adding MongoDB repository"
 - 
   apt: 
     name: "*"
     state: latest
-  name: "Update all packages to their latest version"
+  name: "Updating all packages to their latest version"
 - 
   apt: 
     name: mongodb-org
     state: latest
     update_cache: true
-  name: "Install MongoDB Community Edition"
+  name: "Installing MongoDB Community Edition"
