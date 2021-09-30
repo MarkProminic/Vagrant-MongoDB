@@ -8,26 +8,10 @@ class Hosts
     config.ssh.forward_agent = true
     config.ssh.forward_x11 = true
     config.vm.boot_timeout = 900
-#    config.ssh.password = 'PromVagrant21'
     config.ssh.username = 'prominic'
     config.ssh.private_key_path = 'id_rsa'
-    config.ssh.insert_key = false
-    # Set VirtualBox as provider	  
+    config.ssh.insert_key = false	  
     config.vm.provider 'virtualbox'
-	  
-    #Create Hosts File for all Vms 
-    #begin
- 	#File.open('conf/hosts', 'r') do |f|
-    ##     File.delete(f)
-    #    end	 
-    #    rescue Errno::ENOENT
-    #end
-    
- 
-    settings['hosts'].each_with_index do |host, index|
-     	   #write to /vagrant/hosts to deploy
-	   File.write("conf/hosts", "#{host['ip']} #{host['identifier']} #{host['branch']} vagrant.#{host['branch']}\n", mode: "a")  
-    end  
 	  
     #Main loop to configure VM
     settings['hosts'].each_with_index do |host, index|
@@ -77,13 +61,7 @@ class Hosts
             end
         end
 		
-#	# Add Branch Files to Vagrant Share on VM
-#        if host.has_key?('branch')
-#            server.vm.provision 'shell' do |s|
-#              s.path = scriptsPath + '/add-branch.sh'
-#              s.args = [host['branch'], host['git_url'] ]
-#            end
-#        end
+
 
         # Run custom provisioners
         if host.has_key?('provision')
@@ -92,7 +70,6 @@ class Hosts
             end
         end
 
-	      
         ##Start Ansible Loop
         server.vm.provision :ansible do |ansible|
           ansible.playbook =  'conf/Setup.yml'
