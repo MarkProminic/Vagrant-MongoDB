@@ -98,9 +98,8 @@ class Hosts
           ansible.playbook =  'conf/Setup.yml'
           ansible.compatibility_mode = "2.0"
 #          ansible.install_mode = "pip"
-          ansible.extra_vars = {ip:host['ip'],enable_jenkins_ssl:host['enable_jenkins_ssl'],gateway:host['gateway'],netmask:host['netmask'],identifier:host['identifier'],email:host['email'],git_user:host['git_user'],letsencrypt:host['letsencrypt'],letsencrypt_certbot_renewal_days:host['letsencrypt_certbot_renewal_days'],jenkins_https_port:host['jenkins_https_port'],ssl_passphrase:host['ssl_passphrase'] }
-        end
-
+          ansible.extra_vars = {ip:host['ip'],gateway:host['gateway'],netmask:host['netmask'],identifier:host['identifier']}
+	end
       end
     end
   end
