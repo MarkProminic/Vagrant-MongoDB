@@ -1,3 +1,27 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/MarkProminic/Vagrant-MongoDB/">
+    <img src="conf/wiki/images/Prom.jpg" alt="Logo" width="200" height="100">
+  </a>
+
+  <h3 align="center">MongoDB Vagrant Server</h3>
+
+  <p align="center">
+    An README to jumpstart your build of the MongoDB
+    <br />
+    <a href="https://github.com/MarkProminic/Vagrant-MongoDB/"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/MarkProminic/Vagrant-MongoDB/">View Demo</a>
+    ·
+    <a href="https://github.com/MarkProminic/Vagrant-MongoDB/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/MarkProminic/Vagrant-MongoDB/issues">Request Feature</a>
+  </p>
+</p>
+
+
 # MongoDB
 MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).
 
