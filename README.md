@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/MarkProminic/Vagrant-MongoDB/">
-    <img src="conf/wiki/images/Prom.jpg" alt="Logo" width="200" height="100">
+    <img src="wiki/images/Prom.jpg" alt="Logo" width="200" height="100">
   </a>
 
   <h3 align="center">MongoDB Vagrant Server</h3>
