@@ -1,17 +1,26 @@
----
-- name: Add mongo ppa key
-  sudo: yes
-  apt_key: >
-    keyserver=hkp://keyserver.ubuntu.com:80
-    id=7F0CEB10
-    state=present
-- name: Add mongo sources list
-  sudo: yes
-  lineinfile: >
-    line="deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse"
-    dest=/etc/apt/sources.list.d/mongodb.list
-    state=present
-    create=yes
-- name: Install mongo
-  sudo: yes
-  apt: name=mongodb-org state=latest update_cache=yes
+--- 
+- 
+  apt_key: 
+    state: present
+    url: "https://www.mongodb.org/static/pgp/server-5.0.asc"
+  name: "Add MongoDB source Apt signing key, uses whichever key is at the URL"
+- 
+  lineinfile: 
+    create: true
+    dest: /etc/apt/sources.list.d/mongodb-org-5.0.list
+    line: "deb https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse"
+    state: present
+  name: "Add MongoDB sources list"
+  sudo: true
+- 
+  apt: 
+    name: "*"
+    state: latest
+  name: "Update all packages to their latest version"
+- 
+  apt: 
+    name: mongodb-org
+    state: latest
+    update_cache: true
+  name: "Install MongoDB Community Edition"
+  sudo: true
