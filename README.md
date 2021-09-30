@@ -65,9 +65,6 @@ Please read [CONTRIBUTING.md](https://www.prominic.net) for details on our code 
 ## Authors
 
 * **Mark Gilbert** - *Automation* - [Makr91](https://github.com/Makr91)
-* **Luis Alcantara** -- *Project Lead / Grails Development* -  [luisalcantara](https://github.com/luisalcantara)
-
-See also the list of [contributors](https://github.com/MarkProminic/Switchboard/graphs/contributors) who participated in this project.
 
 ## License
 
